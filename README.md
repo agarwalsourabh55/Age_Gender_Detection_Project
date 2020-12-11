@@ -106,7 +106,6 @@ and after this we can finally predict what our output is
 
 
 
-![alt text](https://github.com/agarwalsourabh55/Age_Gender_Detection_Project/blob/master/image.png?raw=true)
 
 
 
