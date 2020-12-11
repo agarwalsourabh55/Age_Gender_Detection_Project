@@ -1,51 +1,51 @@
-# Age_Gender_Detection
+# Age_Gender_Detection<br/>
 
-This project is all about detecing age and gender of the human face based on UTKFace collection Where approx on 23000 images computaion is performed .
+This project is all about detecing age and gender of the human face based on UTKFace collection Where approx on 23000 images computaion is performed .<br/>
 So Project File and dataset is attached in this repository 
 
-Contributors : 
-Sourabh Agarwal
+Contributors : <br/>
+Sourabh Agarwal<br/>
 Shailesh Goyal
 
-Dataset-https://susanqq.github.io/UTKFace/
-UTKFace dataset is a large-scale face dataset with long age span, which ranges from 0 to 116 years old. The images cover large variation in pose, facial expression, illumination, occlusion, resolution and other such.
+Dataset-https://susanqq.github.io/UTKFace/<br/>
+UTKFace dataset is a large-scale face dataset with long age span, which ranges from 0 to 116 years old. The images cover large variation in pose, facial<br/> expression, illumination, occlusion, resolution and other such.<br/>
 
-Size: The dataset consists of over 20K images with annotations of age, gender and ethnicity.
+Size: The dataset consists of over 20K images with annotations of age, gender and ethnicity.<br/>
 
-Projects: The dataset can be used on a variety of task such as facial detection, age estimation, age progression, age regression, landmark localisation, etc. 
+Projects: The dataset can be used on a variety of task such as facial detection, age estimation, age progression, age regression, landmark localisation, etc. <br/>
 
 
 
 #################################
-import cv2
-images = []
-ages = []
-genders = []
-for file in files:
-    image = cv2.imread(path+file,0)
-    image = cv2.resize(image,dsize=(64,64))
-    image = image.reshape((image.shape[0],image.shape[1],1))
-    images.append(image)
-    split_var = file.split('_')
-    ages.append(split_var[0])
-    genders.append(int(split_var[1]))
+import cv2   <br/>
+images = []<br/>
+ages = []<br/>
+genders = []<br/>
+for file in files:<br/>
+    image = cv2.imread(path+file,0)<br/>
+    image = cv2.resize(image,dsize=(64,64))<br/>
+    image = image.reshape((image.shape[0],image.shape[1],1))<br/>
+    images.append(image)<br/>
+    split_var = file.split('_')<br/>
+    ages.append(split_var[0])<br/>
+    genders.append(int(split_var[1]))<br/>
 ####################################
-In this part of code I just change the size of the image so that we all can have same size of image this will help in compuation
+In this part of code I just change the size of the image so that we all can have same size of image this will help in compuation    <br/>
 
 ####################################
-def display(img):
-    plt.imshow(img[:,:,0])
-    plt.set_cmap('gray')
-    plt.show()
-idx = 500
-sample = images[idx]
-print("Gender:",genders[idx],"Age:",ages[idx])
-display(sample)
+def display(img):<br/>
+    plt.imshow(img[:,:,0])<br/>
+    plt.set_cmap('gray')<br/>
+    plt.show()<br/>
+idx = 500<br/>
+sample = images[idx]<br/>
+print("Gender:",genders[idx],"Age:",ages[idx])<br/>
+display(sample)<br/>
 ####################################
-Performing some data analysis in this part of code based on the age factor 
-Now later on we will predict on some image using CNN
+Performing some data analysis in this part of code based on the age factor <br/>
+Now later on we will predict on some image using CNN<br/>
 
-Model: "functional_1"
+Model: "functional_1"<br/>
 __________________________________________________________________________________________________
 Layer (type)                    Output Shape         Param #     Connected to                     
 ==================================================================================================
@@ -95,16 +95,16 @@ dense_3 (Dense)                 (None, 1)            33          dropout_1[2][0]
 __________________________________________________________________________________________________
 dense_9 (Dense)                 (None, 1)            9           dropout_2[4][0]                  
 ==================================================================================================
-Total params: 6,536,834
-Trainable params: 6,536,834
-Non-trainable params: 0
+Total params: 6,536,834<br/>
+Trainable params: 6,536,834<br/>
+Non-trainable params: 0<br/>
 __________________________________________________________________________________________________
 
 
-#so after calling fit model we can finaaly fit our CNN network with the dataset 
-and after this we can finally predict what our output is 
+#so after calling fit model we can finaaly fit our CNN network with the dataset <br/>
+and after this we can finally predict what our output is <br/>
 
-![alt text](https://github.com/agarwalsourabh55/Age_Gender_Detection_Project/blob/master/image.png?raw=true)
+![alt text](https://github.com/agarwalsourabh55/Age_Gender_Detection_Project/blob/master/image.png?raw=true)<br/>
 
 
 
