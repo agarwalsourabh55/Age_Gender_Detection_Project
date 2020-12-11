@@ -3,6 +3,10 @@
 This project is all about detecing age and gender of the human face based on UTKFace collection Where approx on 23000 images computaion is performed .
 So Project File and dataset is attached in this repository 
 
+Contributors : 
+Sourabh Agarwal
+Shailesh Goyal
+
 Dataset-https://susanqq.github.io/UTKFace/
 UTKFace dataset is a large-scale face dataset with long age span, which ranges from 0 to 116 years old. The images cover large variation in pose, facial expression, illumination, occlusion, resolution and other such.
 
@@ -102,7 +106,7 @@ and after this we can finally predict what our output is
 
 
 
-![alt text](https://github.com/agarwalsourabh55/Age_Gender_Detection_Project/blob/master/Screenshot from 2020-11-30 16-11-09.png?raw=true)
+![alt text](https://github.com/agarwalsourabh55/Age_Gender_Detection_Project/blob/master/image.png?raw=true)
 
 
 
